@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1220</width>
+    <height>798</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>120</y>
+     <width>221</width>
+     <height>681</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #C62828
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="mon_an">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>120</y>
+     <width>231</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>🍰Menu món ăn </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="gio_hang">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>210</y>
+     <width>231</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>🛒Giỏ hàng</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>91</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/pic/logoss.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="tim_kiem">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>40</y>
+     <width>281</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 6px 12px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: #333;
+}
+
+QLineEdit:focus {
+    border: 2px solid white;  /* vẫn là trắng khi focus */
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>Tìm kiếm...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>10</y>
+     <width>211</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>37</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: white;
+    background-color: transparent;  /* làm nền trong suốt nếu muốn */            /* tùy chỉnh cỡ chữ nếu cần */
+    font-weight: bold;              /* chữ đậm */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Chicky</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1231</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>35</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #D32F2F</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>120</y>
+     <width>1001</width>
+     <height>681</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 245, 225);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_55">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>160</y>
+     <width>181</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    background-color: #d2b48c;  /* Nâu nhạt (beige) */
+    color: #4e342e;              /* Nâu đậm cho chữ */
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 12px;
+    qproperty-alignment: AlignCenter;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Menu</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_8">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>720</y>
+     <width>175</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_111">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_112">
+      <item>
+       <widget class="QPushButton" name="page1">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    width: 35px;            /* Chiều rộng của button */
+    height: 35px;           /* Chiều cao của button */
+    border-radius: 5px;      /* Để không bo tròn góc */
+    background-color: rgb(255,255,255);
+    color: black;            /* Màu chữ */
+
+}
+QPushButton:hover {
+    background-color:  rgb(220,220,220);; /* Màu nền khi hover */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_113">
+      <item>
+       <widget class="QPushButton" name="page2">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    width: 35px;            /* Chiều rộng của button */
+    height: 35px;           /* Chiều cao của button */
+    border-radius: 5px;      /* Để không bo tròn góc */
+    background-color: rgb(255,255,255);
+    color: black;            /* Màu chữ */
+}
+QPushButton:hover {
+    background-color:   rgb(220,220,220);;; /* Màu nền khi hover */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_114">
+      <item>
+       <widget class="QPushButton" name="page3">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    width: 35px;            /* Chiều rộng của button */
+    height: 35px;           /* Chiều cao của button */
+    border-radius: 5px;      /* Để không bo tròn góc */
+    background-color: rgb(255,255,255);
+    color: black;            /* Màu chữ */
+border: 1.5px solid black;   /* Viền đen, dày 2px */
+}
+QPushButton:hover {
+    background-color:  rgb(220,220,220);;; /* Màu nền khi hover */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_115">
+      <item>
+       <widget class="QPushButton" name="page4">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    width: 35px;            /* Chiều rộng của button */
+    height: 35px;           /* Chiều cao của button */
+    border-radius: 5px;      /* Để không bo tròn góc */
+    background-color: rgb(255,255,255);
+    color: black;            /* Màu chữ */
+}
+QPushButton:hover {
+    background-color:   rgb(220,220,220);; /* Màu nền khi hover */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_33">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>480</y>
+     <width>170</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/pic/combo2.jpg);
+
+    border-radius: 20px;  /* bạn có thể chỉnh độ bo tùy ý */
+
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_56">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>430</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Gà viên phô mai 35K</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_57">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>430</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Gà popcorn 32K</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_66">
+   <property name="geometry">
+    <rect>
+     <x>990</x>
+     <y>260</y>
+     <width>170</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/pic/salad_ga_sot_me_rang.jpg);
+    border-radius: 20px;  /* bạn có thể chỉnh độ bo tùy ý */</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="salad_ga_sot_me_rang_38k">
+   <property name="geometry">
+    <rect>
+     <x>1130</x>
+     <y>440</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    width: 25px;            /* Chiều rộng của button */
+    height: 25px;           /* Chiều cao của button */
+    border-radius: 5px;      /* Để không bo tròn góc */
+    background-color: rgb(255,140,0);
+    color: black;            /* Màu chữ */
+}
+QPushButton:hover {
+    background-color: rgb(255, 170, 127);; /* Màu nền khi hover */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_64">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>650</y>
+     <width>121</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Combo 3: Hamburger gà + Khoai + 7Up  60K</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_34">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>480</y>
+     <width>170</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/pic/combo3.png);
+
+    border-radius: 20px;  /* bạn có thể chỉnh độ bo tùy ý */
+
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_61">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>650</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Combo 2: Gà viên + Khoai lớn + Coca 58K</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_63">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>260</y>
+     <width>170</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/pic/warp_ga_chien.png);
+    border-radius: 20px;  /* bạn có thể chỉnh độ bo tùy ý */</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="combo2">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>660</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    width: 25px;            /* Chiều rộng của button */
+    height: 25px;           /* Chiều cao của button */
+    border-radius: 5px;      /* Để không bo tròn góc */
+    background-color: rgb(255,140,0);
+    color: black;            /* Màu chữ */
+}
+QPushButton:hover {
+    background-color: rgb(255, 170, 127);; /* Màu nền khi hover */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_65">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>430</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Salad gà sốt mè rang 38K</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ga_vien_pho_mai_35k">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>440</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    width: 25px;            /* Chiều rộng của button */
+    height: 25px;           /* Chiều cao của button */
+    border-radius: 5px;      /* Để không bo tròn góc */
+    background-color: rgb(255,140,0);
+    color: black;            /* Màu chữ */
+}
+QPushButton:hover {
+    background-color: rgb(255, 170, 127);; /* Màu nền khi hover */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="combo3">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>660</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    width: 25px;            /* Chiều rộng của button */
+    height: 25px;           /* Chiều cao của button */
+    border-radius: 5px;      /* Để không bo tròn góc */
+    background-color: rgb(255,140,0);
+    color: black;            /* Màu chữ */
+}
+QPushButton:hover {
+    background-color: rgb(255, 170, 127);; /* Màu nền khi hover */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ga_popcorn_32k">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>440</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    width: 25px;            /* Chiều rộng của button */
+    height: 25px;           /* Chiều cao của button */
+    border-radius: 5px;      /* Để không bo tròn góc */
+    background-color: rgb(255,140,0);
+    color: black;            /* Màu chữ */
+}
+QPushButton:hover {
+    background-color: rgb(255, 170, 127);; /* Màu nền khi hover */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_62">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>430</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Wrap gà chiên 40K</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_60">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>260</y>
+     <width>170</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/pic/ga_popcorn.jpg);
+
+    border-radius: 20px;  /* bạn có thể chỉnh độ bo tùy ý */</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="combo4">
+   <property name="geometry">
+    <rect>
+     <x>1130</x>
+     <y>660</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    width: 25px;            /* Chiều rộng của button */
+    height: 25px;           /* Chiều cao của button */
+    border-radius: 5px;      /* Để không bo tròn góc */
+    background-color: rgb(255,140,0);
+    color: black;            /* Màu chữ */
+}
+QPushButton:hover {
+    background-color: rgb(255, 170, 127);; /* Màu nền khi hover */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="combo1">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>660</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    width: 25px;            /* Chiều rộng của button */
+    height: 25px;           /* Chiều cao của button */
+    border-radius: 5px;      /* Để không bo tròn góc */
+    background-color: rgb(255,140,0);
+    color: black;            /* Màu chữ */
+}
+QPushButton:hover {
+    background-color: rgb(255, 170, 127);; /* Màu nền khi hover */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_35">
+   <property name="geometry">
+    <rect>
+     <x>990</x>
+     <y>480</y>
+     <width>170</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/pic/combo4.png);
+
+    border-radius: 20px;  /* bạn có thể chỉnh độ bo tùy ý */
+
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_32">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>480</y>
+     <width>170</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/pic/combo1.jpg);
+
+    border-radius: 20px;  /* bạn có thể chỉnh độ bo tùy ý */
+
+
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_59">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>650</y>
+     <width>121</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Combo 1: Gà rán + Khoai vừa + Pepsi 59K</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_58">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>260</y>
+     <width>170</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/pic/ga_vien_pho_mai.jpg);
+
+    border-radius: 20px;  /* bạn có thể chỉnh độ bo tùy ý */</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_67">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>650</y>
+     <width>121</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Combo 4: Gà cay + Khoai lắc + Pepsi 62K</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="warp_ga_chien_40k">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>440</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    width: 25px;            /* Chiều rộng của button */
+    height: 25px;           /* Chiều cao của button */
+    border-radius: 5px;      /* Để không bo tròn góc */
+    background-color: rgb(255,140,0);
+    color: black;            /* Màu chữ */
+}
+QPushButton:hover {
+    background-color: rgb(255, 170, 127);; /* Màu nền khi hover */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="best_seller">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>170</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #FF4500;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+QPushButton:hover {
+    background-color:  #CC3700
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Best Seller🔥</string>
+   </property>
+  </widget>
+  <zorder>label_5</zorder>
+  <zorder>mon_an</zorder>
+  <zorder>gio_hang</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_3</zorder>
+  <zorder>tim_kiem</zorder>
+  <zorder>label_6</zorder>
+  <zorder>label_55</zorder>
+  <zorder>horizontalLayoutWidget_8</zorder>
+  <zorder>label_33</zorder>
+  <zorder>label_56</zorder>
+  <zorder>label_57</zorder>
+  <zorder>label_66</zorder>
+  <zorder>salad_ga_sot_me_rang_38k</zorder>
+  <zorder>label_64</zorder>
+  <zorder>label_34</zorder>
+  <zorder>label_61</zorder>
+  <zorder>label_63</zorder>
+  <zorder>combo2</zorder>
+  <zorder>label_65</zorder>
+  <zorder>ga_vien_pho_mai_35k</zorder>
+  <zorder>combo3</zorder>
+  <zorder>ga_popcorn_32k</zorder>
+  <zorder>label_62</zorder>
+  <zorder>label_60</zorder>
+  <zorder>combo4</zorder>
+  <zorder>combo1</zorder>
+  <zorder>label_35</zorder>
+  <zorder>label_32</zorder>
+  <zorder>label_59</zorder>
+  <zorder>label_58</zorder>
+  <zorder>label_67</zorder>
+  <zorder>warp_ga_chien_40k</zorder>
+  <zorder>best_seller</zorder>
+ </widget>
+ <resources>
+  <include location="doan.qrc"/>
+ </resources>
+ <connections/>
+</ui>
